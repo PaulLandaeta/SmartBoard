@@ -4,14 +4,14 @@
             "outputFile": "edu.upb.lp.genericgame.app-mergeDebugResources-29:/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/plandaeta/Downloads/UPBGame2023/app/src/main/res/values-v11/styles.xml",
+                    "source": "C:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "177",
+                        "startOffsets": "183",
                         "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "309"
+                        "endOffsets": "317"
                     },
                     "to": {
                         "startLines": "2",
