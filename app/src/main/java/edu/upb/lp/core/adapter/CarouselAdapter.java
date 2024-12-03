@@ -17,7 +17,6 @@ import java.util.List;
 import edu.upb.lp.genericgame.R;
 import edu.upb.lp.core.activities.AndroidGameActivity;
 import edu.upb.lp.core.model.ScreenData;
-import edu.upb.lp.progra.bugWorld.BugWorldUI;
 
 public class CarouselAdapter extends RecyclerView.Adapter<CarouselAdapter.ViewHolder> {
 
@@ -60,7 +59,7 @@ public class CarouselAdapter extends RecyclerView.Adapter<CarouselAdapter.ViewHo
                 });
             }
         } else {
-            holder.button.setVisibility(View.GONE); // Ocultar botón
+            holder.button.setVisibility(View.GONE);
         }
     }
 
