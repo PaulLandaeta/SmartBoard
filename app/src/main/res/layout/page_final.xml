@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+    <ImageView
+        android:id="@+id/center_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/bugs_hungry_bug"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Travel Image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_image"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:text="Título"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="25dp"
+            android:text="Descripción de la imagen"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="end"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_got_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Got It"
+            android:textColor="#2196F3"
+            android:background="#FFFFFF"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btn_enable_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enable Later"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
