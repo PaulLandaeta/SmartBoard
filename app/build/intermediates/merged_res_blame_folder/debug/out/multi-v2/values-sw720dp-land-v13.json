@@ -4,13 +4,13 @@
             "outputFile": "edu.upb.lp.genericgame.app-mergeDebugResources-29:/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/plandaeta/Downloads/UPBGame2023/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "source": "C:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "200",
+                        "startOffsets": "206",
                         "endColumns": "58",
-                        "endOffsets": "254"
+                        "endOffsets": "260"
                     },
                     "to": {
                         "startLines": "2",

@@ -1,86 +1,106 @@
 [
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_dead_bug_selected.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_dead_bug_selected.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_dead_bug.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_dead_bug.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_hungry_bug.jpeg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_hungry_bug.jpeg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_screen.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\screen.xml"
     },
     {
-        "merged": "edu.upb.lp.genericgame.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "edu.upb.lp.genericgame.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_screen3.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\screen3.xml"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_dead_bug_selected.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_dead_bug_selected.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_dead_bug.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_dead_bug.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_old_bug.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_old_bug.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_happy_bug.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_happy_bug.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_screen1.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\screen1.xml"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_happy_bug_selected.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_happy_bug_selected.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/raw_ping.mp3.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/raw/ping.mp3"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_sad_bug_selected.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_sad_bug_selected.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_colors_grey.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/colors_grey.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_happy_bug_selected.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_happy_bug_selected.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_sad_bug.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_sad_bug.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_activity_carousel.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\activity_carousel.xml"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_hungry_bug_selected.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_hungry_bug_selected.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_happy_bug.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_happy_bug.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable-mdpi_ic_launcher.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_old_bug_selected.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_old_bug_selected.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_old_bug_selected.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_old_bug_selected.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_hungry_bug.jpeg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_hungry_bug.jpeg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable-hdpi_ic_launcher.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_sad_bug_selected.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_sad_bug_selected.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\raw_ping.mp3.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\raw\\ping.mp3"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_bugs_old_bug.jpg.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/bugs_old_bug.jpg"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_score_background.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\score_background.xml"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_colors_white.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/colors_white.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_hungry_bug_selected.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_hungry_bug_selected.jpg"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_score_background.xml.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/score_background.xml"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_colors_blue.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\colors_blue.png"
     },
     {
-        "merged": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-merged_res-31:/drawable_colors_blue.png.flat",
-        "source": "/Users/plandaeta/.gradle/daemon/8.11/edu.upb.lp.genericgame.app-main-33:/drawable/colors_blue.png"
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\layout_screen2.xml.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\layout\\screen2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_bugs_sad_bug.jpg.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\bugs_sad_bug.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_colors_grey.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\colors_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-merged_res-31:\\drawable_colors_white.png.flat",
+        "source": "C:\\Users\\ERNESTO JUAREZ\\.gradle\\daemon\\8.11\\edu.upb.lp.genericgame.app-main-33:\\drawable\\colors_white.png"
+    },
+    {
+        "merged": "edu.upb.lp.genericgame.app-merged_res-31:/layout_screen.xml.flat",
+        "source": "edu.upb.lp.genericgame.app-main-33:/layout/screen.xml"
     }
 ]

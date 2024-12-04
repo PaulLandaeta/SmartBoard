@@ -1,12 +1,12 @@
-#Wed Nov 20 19:55:25 BOT 2024
-base.0=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.3=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.4=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.5=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
-base.6=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
-base.7=/Users/plandaeta/Downloads/UPBGame2023/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+#Mon Dec 02 22:42:09 BOT 2024
+base.0=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.4=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.5=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.6=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.7=C\:\\Users\\ERNESTO JUAREZ\\AndroidStudioProjects\\SmartBoard\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

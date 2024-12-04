@@ -24,7 +24,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="edu.upb.lp.core.activities.AndroidGameActivity"
+            android:name="edu.upb.lp.core.activities.CarouselActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.upb.lp.core.activities.AndroidGameActivity"
+            android:exported="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
