@@ -2,5 +2,7 @@
 <resources>
 
     <string name="app_name">UPBGame</string>
+    <string name="menu_main_titulo">Main Menu</string>
+    <string name="menu_titulo">Menú</string>
 
 </resources>
