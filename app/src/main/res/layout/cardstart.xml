@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+        <Button
+            android:id="@+id/btn_got_it"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Toca para empezar"
+            android:textSize="50sp"
+            android:textColor="#2196F3"
+            android:background="#FFFFFF"
+            android:padding="12dp" />
+
+</RelativeLayout>
