@@ -1,5 +1,7 @@
 package edu.upb.lp.core.deck;
 
-public interface Card {
+import android.os.Parcel;
+import android.os.Parcelable;
 
+public interface Card extends Parcelable {
 }
