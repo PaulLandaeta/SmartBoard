@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
@@ -26,12 +26,14 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.upb.lp.core.adapter.AndroidLibrary;
 import edu.upb.lp.core.adapter.AppConnector;
+import edu.upb.lp.core.deck.Deck;
 import edu.upb.lp.feature.ui.GameFactory;
 import edu.upb.lp.core.adapter.TextListener;
 import edu.upb.lp.core.views.MyTextView;
@@ -211,11 +213,11 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
     public void setImageOnCell(int vertical, int horizontal, String image) {
         TableRow row = (TableRow) table.getChildAt(vertical);
         if (row == null) {
-            throw new IndexOutOfBoundsException("Wrong vertical coordinate " + vertical + ", actual range is (0,"+table.getChildCount()+")");
+            throw new IndexOutOfBoundsException("Wrong vertical coordinate " + vertical + ", actual range is (0," + table.getChildCount() + ")");
         }
         TextView view = (TextView) row.getChildAt(horizontal);
         if (view == null) {
-            throw new IndexOutOfBoundsException("Wrong horizontal coordinate " + horizontal + ", actual range is (0,"+row.getChildCount()+")");
+            throw new IndexOutOfBoundsException("Wrong horizontal coordinate " + horizontal + ", actual range is (0," + row.getChildCount() + ")");
         }
         int id = getResources().getIdentifier(image, "drawable",
                 getPackageName());
@@ -229,7 +231,7 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
      * @return a generated ID value
      */
     private static int generateViewId() {
-        for (;;) {
+        for (; ; ) {
             final int result = sNextGeneratedId.get();
             // aapt-generated IDs have the high byte nonzero; clamp to the range
             // under that.
@@ -339,6 +341,7 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
                 LinearLayout.LayoutParams.MATCH_PARENT, bottomSectionHeight);
         bottomSection.setLayoutParams(bottomParams);
     }
+
     @Override
     public void setDynamicTitle(String title) {
         if (getSupportActionBar() != null) {
@@ -447,8 +450,15 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
 
     @Override
     public void executeLater(Runnable r, int ms) {
-        handler.postDelayed(r,ms);
+        handler.postDelayed(r, ms);
 
+    }
+
+    @Override
+    public void showDeck(Deck deck) {
+        Intent deckIntent =  new Intent(getApplicationContext(), DeckActivity.class);
+        deckIntent.putParcelableArrayListExtra("DECK", deck.getCards());
+        startActivity(deckIntent);
     }
 }
 

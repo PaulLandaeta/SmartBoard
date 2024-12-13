@@ -11,7 +11,7 @@ import edu.upb.lp.core.adapter.TextListener;
  * @author Luis Frontanilla
  * @author Jordi Ugarte
  */
-public interface AndroidLibrary extends UiLibrary, StorageLibrary, MediaLibrary {
+public interface AndroidLibrary extends UiLibrary, StorageLibrary, MediaLibrary, DeckLibrary {
 
 	/**
 	 * Ask the user for text. This method will show a popup window with the

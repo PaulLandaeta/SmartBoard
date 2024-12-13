@@ -2,5 +2,5 @@
 <resources>
 
     <string name="app_name">UPBGame</string>
-
+    <string name="image_description">Descripción de la imagen</string>
 </resources>
