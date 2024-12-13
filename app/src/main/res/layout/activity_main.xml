@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".AndroidGameActivity"
+    tools:context="edu.upb.lp.core.activities.AndroidGameActivity"
     tools:ignore="NestedWeights">
 
     <!-- Toolbar para el título -->

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="edu.upb.lp.core.activities.AboutMoreUsActivity.AboutMoreUsActivity">
+
+    <!-- Titulo del desarrollador y nombre del juego -->
+    <TextView
+        android:id="@+id/text_game_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game developer: "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/name_of_game_on_the_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/name_of_game_on_the_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Atari"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:maxLines="2"
+        android:minLines="1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_game_developer"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/name_of_game_on_the_title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Imagen del juego -->
+            <ImageView
+                android:id="@+id/image_game"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bugs_happy_bug"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Nombre del juego -->
+            <TextView
+                android:id="@+id/name_of_game"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Atari"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:maxLines="2"
+                android:minLines="1"
+                app:layout_constraintTop_toBottomOf="@id/image_game"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <!-- Descripción del rol del juego -->
+            <TextView
+                android:id="@+id/its_a_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Game Developer,"
+                android:textColor="@color/dark_grey"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/name_of_game"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <!-- Año del juego -->
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025"
+                android:textSize="20sp"
+                android:textColor="@color/dark_grey"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/name_of_game"
+                app:layout_constraintStart_toEndOf="@id/its_a_game"/>
+
+            <!-- Titulo de miembros -->
+            <TextView
+                android:id="@+id/title_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Members"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/its_a_game"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <!-- Cantidad de miembros -->
+            <TextView
+                android:id="@+id/numbers_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(4)"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toBottomOf="@id/its_a_game"
+                app:layout_constraintStart_toEndOf="@id/title_members"/>
+
+            <!-- Lista de miembros -->
+            <LinearLayout
+                android:id="@+id/list_of_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title_members"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/member_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_member_of_group">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <!-- Espacio extra al final -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toBottomOf="@id/list_of_members"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
