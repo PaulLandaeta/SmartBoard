@@ -1,6 +1,9 @@
 package edu.upb.lp.core.activities;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -30,12 +33,17 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
+
 import edu.upb.lp.core.adapter.AndroidLibrary;
 import edu.upb.lp.core.adapter.AppConnector;
 import edu.upb.lp.feature.ui.GameFactory;
 import edu.upb.lp.core.adapter.TextListener;
 import edu.upb.lp.core.views.MyTextView;
 import edu.upb.lp.genericgame.R;
+import edu.upb.lp.core.model.Score;
+
 
 
 public class AndroidGameActivity extends AppCompatActivity implements AndroidLibrary,
@@ -57,6 +65,9 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
     private AppConnector userUI;
 
     private final MediaPlayer[] mp = new MediaPlayer[10];
+    private static final String PREFS_NAME = "ScorePrefs";
+    private static final String SCORES_KEY = "ScoresList";
+    private List<Score> listScores = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +84,7 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
         // table = (TableLayout) findViewById(R.id.maingrid);
 
         table = findViewById(R.id.maingrid);
-
+        loadScoresFromPreferences();
 // Asegúrate de usar FrameLayout.LayoutParams si cambias dinámicamente los LayoutParams
         if (table != null) {
             FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
@@ -449,6 +460,30 @@ public class AndroidGameActivity extends AppCompatActivity implements AndroidLib
     public void executeLater(Runnable r, int ms) {
         handler.postDelayed(r,ms);
 
+    }
+
+    private void loadScoresFromPreferences() {
+        SharedPreferences preferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String json = preferences.getString(SCORES_KEY, null);
+
+        if (json != null) {
+            Gson gson = new Gson();
+            Type type = new TypeToken<List<Score>>() {}.getType();
+            listScores = gson.fromJson(json, type);
+        }
+    }
+    private void saveScoresToPreferences() {
+        SharedPreferences preferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(listScores);
+        editor.putString(SCORES_KEY, json);
+        editor.apply();
+    }
+
+    private void addNewScore(String name, int score) {
+        listScores.add(new Score(name, score));
+        saveScoresToPreferences();
     }
 }
 
