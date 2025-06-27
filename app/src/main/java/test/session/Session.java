@@ -2,6 +2,8 @@ package test.session;
 
 import android.os.Build;
 
+import androidx.annotation.NonNull;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,21 +14,12 @@ import java.time.Duration;
 
 public class Session {
     private static Session instance = null;
-    // Renombramos 'device' a 'driver'
     private final AppiumDriver driver;
 
     private Session() {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("platformName",       "Android");
-        caps.setCapability("appium:deviceName",  "Pixel 9 Pro XL");
-        caps.setCapability("appium:platformVersion", "16");
-        caps.setCapability("appium:automationName",   "UiAutomator2");
-        caps.setCapability("appium:appPackage",       "edu.upb.lp.genericgame");
-        caps.setCapability("appium:appActivity",      "edu.upb.lp.core.activities.AndroidGameActivity");
-        caps.setCapability("appium:noReset",          true);
+        DesiredCapabilities caps = getDesiredCapabilities();
 
         try {
-            // Aquí usas el mismo campo 'driver'
             driver = new AndroidDriver(
                     new URL("http://127.0.0.1:4723/"),
                     caps
@@ -37,6 +30,19 @@ public class Session {
         } catch (MalformedURLException e) {
             throw new RuntimeException("URL de Appium malformada", e);
         }
+    }
+
+    @NonNull
+    private static DesiredCapabilities getDesiredCapabilities() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName",       "Android");
+        caps.setCapability("appium:deviceName",  "Pixel 9 Pro XL");
+        caps.setCapability("appium:platformVersion", "16");
+        caps.setCapability("appium:automationName",   "UiAutomator2");
+        caps.setCapability("appium:appPackage",       "edu.upb.lp.genericgame");
+        caps.setCapability("appium:appActivity",      "edu.upb.lp.core.activities.AndroidGameActivity");
+        caps.setCapability("appium:noReset",          true);
+        return caps;
     }
 
     public static Session getInstance() {
