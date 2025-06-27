@@ -1,29 +1,59 @@
 package test.session;
 
+import android.os.Build;
 
 import io.appium.java_client.AppiumDriver;
-import test.factoryDevices.FactoryDevices;
+import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 
 public class Session {
-    private static Session session = null;
-    private AppiumDriver device;
-    private Session(){
-        // todo
-        device = FactoryDevices.make("android").create();
+    private static Session instance = null;
+    // Renombramos 'device' a 'driver'
+    private final AppiumDriver driver;
+
+    private Session() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName",       "Android");
+        caps.setCapability("appium:deviceName",  "Pixel 9 Pro XL");
+        caps.setCapability("appium:platformVersion", "16");
+        caps.setCapability("appium:automationName",   "UiAutomator2");
+        caps.setCapability("appium:appPackage",       "edu.upb.lp.genericgame");
+        caps.setCapability("appium:appActivity",      "edu.upb.lp.core.activities.AndroidGameActivity");
+        caps.setCapability("appium:noReset",          true);
+
+        try {
+            // Aquí usas el mismo campo 'driver'
+            driver = new AndroidDriver(
+                    new URL("http://127.0.0.1:4723/"),
+                    caps
+            );
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            }
+        } catch (MalformedURLException e) {
+            throw new RuntimeException("URL de Appium malformada", e);
+        }
     }
 
-    public static Session getInstance(){
-        if (session == null)
-            session = new Session();
-        return session;
+    public static Session getInstance() {
+        if (instance == null) {
+            instance = new Session();
+        }
+        return instance;
     }
 
-    public void closeApp(){
-        device.quit();
-        session = null;
+    public AppiumDriver getDevice() {
+        return driver;
     }
 
-    public AppiumDriver getDevice(){
-        return  device;
+    public static void reset() {
+        if (instance != null) {
+            instance.driver.quit();
+            instance = null;
+        }
     }
 }
