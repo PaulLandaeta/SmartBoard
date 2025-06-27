@@ -21,9 +21,7 @@ public class Session {
 
         try {
             driver = new AndroidDriver(
-                    new URL("http://127.0.0.1:4723/"),
-                    caps
-            );
+                    new URL("http://127.0.0.1:4723/"), caps);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             }
