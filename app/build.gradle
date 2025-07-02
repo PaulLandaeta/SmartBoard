@@ -25,13 +25,20 @@ android {
         checkReleaseBuilds true
         warningsAsErrors true
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE-notice.md'
+
+    }
 
 }
 
 dependencies {
     // Dependencias básicas
-    implementation 'androidx.appcompat:appcompat:1.7.0' // Soporte para Toolbar
+    implementation 'androidx.appcompat:appcompat:1.7.1' // Soporte para Toolbar
     implementation 'com.google.android.material:material:1.12.0' // Material Components
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
 //    implementation 'androidx.activity:activity:1.9.3'
 //    implementation 'org.testng:testng:7.8.0'
