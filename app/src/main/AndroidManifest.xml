@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk />
 
@@ -7,7 +8,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:icon="@drawable/ic_launcher"
-        android:allowBackup="true">
+        android:allowBackup="true"
+        tools:replace="android:label">
         <activity
             android:name="edu.upb.lp.core.activities.AndroidGameActivity"
             android:exported="true">
