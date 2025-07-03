@@ -13,13 +13,12 @@ public class Session {
     private AppiumDriver device;
     private Session(){
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("appium:deviceName", "Galaxy A34 5G");
-        caps.setCapability("appium:platformVersion", "13");
         caps.setCapability("platformName", "Android");
+        caps.setCapability("appium:deviceName", "sdk_gphone64_x86_64");
+        caps.setCapability("appium:platformVersion", "16");
         caps.setCapability("appium:automationName", "uiautomator2");
         caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
         caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
-
         try {
             device = new AppiumDriver(new URL("http://127.0.0.1:4723/"), caps);
         } catch (MalformedURLException e) {
