@@ -1,9 +1,12 @@
 package edu.upb.lp.test.activities;
 
 import io.appium.java_client.AppiumDriver;
+import test.controls.Button;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 public class MainActivity {
 
     private final AppiumDriver driver;
@@ -32,4 +35,12 @@ public class MainActivity {
     public void clickButtonBuyFood() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"BUY FOOD\"]")).click();
     }
+    public class Position {
+        public Button leftBug;
+        public Button rightBug;
+        public Position() {
+            this.leftBug = new Button(By.xpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[4]"));
+            this.rightBug = new Button(By.xpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[5]"));
 }
+    }
+        }
