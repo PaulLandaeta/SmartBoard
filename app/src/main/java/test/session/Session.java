@@ -13,8 +13,8 @@ public class Session {
     private AppiumDriver device;
     private Session(){
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("appium:deviceName", "Galaxy A34 5G");
-        caps.setCapability("appium:platformVersion", "13");
+        caps.setCapability("appium:deviceName", "Pixel 9 Pro XL");
+        caps.setCapability("appium:platformVersion", "16");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:automationName", "uiautomator2");
         caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
@@ -46,4 +46,5 @@ public class Session {
     public AppiumDriver getDevice(){
         return  device;
     }
+    public void setUp() {}
 }
