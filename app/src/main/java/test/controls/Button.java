@@ -6,4 +6,7 @@ public class Button extends AppiumControl{
     public Button(By locator) {
         super(locator);
     }
+
+
+
 }

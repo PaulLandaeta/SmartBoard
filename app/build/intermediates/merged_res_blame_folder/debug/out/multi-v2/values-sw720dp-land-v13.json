@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "edu.upb.lp.genericgame.app-mergeDebugResources-29:/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "edu.upb.lp.genericgame.app-mergeDebugResources-2:/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/plandaeta/Downloads/UPBGame2023/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "source": "/Users/leo/app/src/main/res/values-sw720dp-land/dimens.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
