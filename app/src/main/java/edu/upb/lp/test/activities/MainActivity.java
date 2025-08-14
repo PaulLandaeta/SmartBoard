@@ -22,7 +22,7 @@ public class MainActivity {
     }
 
     public void clickButtonRestart() {
-        driver.findElement(By.xpath("//android.widget.Button[@text=\"RESTART\"]")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text="RESTART"]")).click();
     }
 
     public void confirmRestartDialogIfPresent() {
@@ -32,10 +32,10 @@ public class MainActivity {
     }
 
     public void clickButtonPassDay() {
-        driver.findElement(By.xpath("//android.widget.Button[@text=\"PASS DAY\"]")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text="PASS DAY"]")).click();
     }
 
     public void clickButtonBuyFood() {
-        driver.findElement(By.xpath("//android.widget.Button[@text=\"BUY FOOD\"]")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text="BUY FOOD"]")).click();
     }
 }
