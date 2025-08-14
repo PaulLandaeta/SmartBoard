@@ -14,7 +14,7 @@ public class BottomBarTest {
 
     @Before
     public void setUp() {
-        Session.reset();
+        Session.resetInstance();
         driver    = Session.getInstance().getDevice();
         bottomBar = new BottomBarPage(driver);
     }
@@ -22,7 +22,7 @@ public class BottomBarTest {
     @After
     public void tearDown() {
         driver.quit();
-        Session.reset();
+        Session.resetInstance();
     }
 
     @Test
