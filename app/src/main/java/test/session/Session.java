@@ -1,49 +1,61 @@
 package test.session;
 
-
+import android.os.Build;
+import androidx.annotation.NonNull;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import io.appium.java_client.AppiumDriver;
-import test.factoryDevices.FactoryDevices;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
+
 public class Session {
     private static Session session = null;
-    private AppiumDriver device;
-    private Session(){
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("appium:deviceName", "Galaxy A34 5G");
-        caps.setCapability("appium:platformVersion", "13");
-        caps.setCapability("platformName", "Android");
-        caps.setCapability("appium:automationName", "uiautomator2");
-        caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
-        caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
+    private final AppiumDriver device;
+
+    private Session() {
+        DesiredCapabilities caps = getDesiredCapabilities();
 
         try {
-            device = new AppiumDriver(new URL("http://127.0.0.1:4723/"), caps);
+            device = new AndroidDriver(
+                    new URL("http://127.0.0.1:4723/"), caps);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                device.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            }
         } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("URL de Appium malformada", e);
         }
     }
 
-    public static Session getInstance(){
-        if (session == null)
+    @NonNull
+    private static DesiredCapabilities getDesiredCapabilities() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("appium:deviceName", "Pixel 9 Pro XL");
+        caps.setCapability("appium:platformVersion", "16");
+        caps.setCapability("appium:automationName", "UiAutomator2");
+        caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
+        caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
+        caps.setCapability("appium:noReset", true);
+        return caps;
+    }
+
+    public static Session getInstance() {
+        if (session == null) {
             session = new Session();
+        }
         return session;
     }
 
-    public void closeApp(){
-        device.quit();
-        session = null;
+    public AppiumDriver getDevice() {
+        return device;
     }
+
     public static void resetInstance() {
         if (session != null) {
             session.device.quit();
             session = null;
         }
-    }
-    public AppiumDriver getDevice(){
-        return  device;
     }
 }
