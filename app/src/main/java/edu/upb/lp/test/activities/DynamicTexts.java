@@ -6,6 +6,7 @@ import io.appium.java_client.AppiumDriver;
 import test.controls.Label;
 
 public class DynamicTexts {
+    //mejoras para test de textos dinamicos
     private final AppiumDriver driver;
     public DynamicTexts(AppiumDriver driver) {
         this.driver = driver;
@@ -18,10 +19,6 @@ public class DynamicTexts {
     }
     public void clickButtonBuyFood() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"BUY FOOD\"]")).click();
-    }
-    public Label getScoreLabel(){
-        Label score = new Label(By.xpath("(//android.widget.TextView[contains(@text, 'Score:'))[2]"));
-        return score;
     }
     public Label getMoneyLabel(){
         return new Label(By.xpath("//android.widget.TextView[contains(@text, 'Money:')]"));

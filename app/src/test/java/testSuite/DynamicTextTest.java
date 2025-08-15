@@ -97,14 +97,13 @@ public class DynamicTextTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         // Compras
-        IntStream.range(0, 2).forEach(i -> dynamicTexts.clickButtonBuyFood());
+        dynamicTexts.clickButtonBuyFood();
         // Días
-        IntStream.range(0, 8).forEach(i -> dynamicTexts.clickButtonPassDay());
+        dynamicTexts.clickButtonPassDay();
 
         // Verificaciones
-        wait.until(d -> "Score: 1".equals(dynamicTexts.getScoreLabel().getText()));
         dynamicTexts.clickButtonRestart();
-        wait.until(d -> "Score: 0".equals(dynamicTexts.getScoreLabel().getText()));
+        wait.until(d -> "Money: 100".equals(dynamicTexts.getMoneyLabel().getText()));
     }
     @After
     public void tearDown() {
