@@ -34,8 +34,14 @@ public class MainActivity {
     public void clickButtonBuyFood() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"BUY FOOD\"]")).click();
     }
-
+    public void clickButtonSellBug() {
+        driver.findElement(By.xpath("//android.widget.Button[@text=\"SELL BUG\"]")).click();
+    }
+    public void clickCellXpath(String s){
+        driver.findElement(By.xpath(s)).click();
+    }
     public boolean isHeaderTextVisible() {
         return Objects.requireNonNull(driver.getPageSource()).contains("Bug World");
     }
+
 }

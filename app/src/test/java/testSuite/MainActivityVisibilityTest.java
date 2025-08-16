@@ -3,6 +3,9 @@ package testSuite;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
+
+import edu.upb.lp.progra.bugWorld.BugWorld;
+import edu.upb.lp.progra.bugWorld.Cell;
 import edu.upb.lp.test.activities.MainActivity;
 import io.appium.java_client.AppiumDriver;
 import test.session.Session;
@@ -72,6 +75,83 @@ public class MainActivityVisibilityTest {
         Assert.assertTrue("Los botones no son visibles", mainActivity.isButtonsVisible());
     }
 
+    @Test
+    public void testNoTraspasarObstaculos(){
+        mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[4]");
+        mainActivity.clickButtonSellBug();
+        mainActivity.clickButtonBuyFood();
+        int x = 0;
+        int y = 0;
+        boolean flag = false;
+        for (int i = 1; i <= 9 && !flag; i++) {
+            for (int j = 1; j <= 8 && !flag; j++) {
+                String s = "//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+i+"]/android.widget.TextView["+j+"][@text='20']";
+                if(!driver.findElements(By.xpath(s)).isEmpty()){
+                    System.out.println("encontro comida");
+                    x = j;
+                    y = i;
+                    flag = true;
+                }
+            }
+        }
+
+        boolean verificar = true;
+        if(flag){
+            int actx = 5;
+            int acty = 5;
+            mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[5]");
+            if(y > 5) {
+                for (int i = 6; i <= y; i++) {
+                    mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+i+"]/android.widget.TextView[5]");
+                    acty+= 1;
+                }
+            }else if(y<5){
+                for (int i = 4; i >= y; i--) {
+                    mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+i+"]/android.widget.TextView[5]");
+                    acty-= 1;
+                }
+            }
+            String s = "//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+y+"]/android.widget.TextView["+x+"][@text='20']";
+            String s1 = "//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+y+"]/android.widget.TextView["+x+"][@text='19']";
+            verificar =(driver.findElements(By.xpath(s)).isEmpty()||driver.findElements(By.xpath(s1)).isEmpty());
+            if(x > 5) {
+                for (int i = 6; i <= x; i++) {
+                    mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+acty+"]/android.widget.TextView["+i+"]");
+                    actx+= 1;
+                }
+            }else if(x<5){
+                for (int i = 4; i >= x; i--) {
+                    mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+acty+"]/android.widget.TextView["+i+"]");
+                    actx-= 1;
+                }
+            }
+            verificar  = verificar && (driver.findElements(By.xpath(s)).isEmpty()||driver.findElements(By.xpath(s1)).isEmpty());
+        }
+        Assert.assertTrue("El personaje puede traspasar comida",verificar);
+    }
+
+    @Test
+    public void testNoPasarElBordeSuperior(){
+        mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[4]");
+        for (int i = 4; i >= 1; i--) {
+            mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+i+"]/android.widget.TextView[4]");
+        }
+        mainActivity.clickCellXpath("//android.view.ViewGroup[@resource-id=\"edu.upb.lp.genericgame:id/toolbar\"]");
+        boolean verificar = driver.findElements(By.xpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[0]/android.widget.TextView[4]")).isEmpty();
+        Assert.assertTrue("El personaje salio del borde superior",verificar);
+    }
+
+    @Test
+    public void testNoPasarElBordeInferior(){
+        mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[5]/android.widget.TextView[4]");
+        for (int i = 6; i >= 1; i++) {
+            mainActivity.clickCellXpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow["+i+"]/android.widget.TextView[4]");
+        }
+        mainActivity.clickCellXpath("//android.widget.LinearLayout[@resource-id=\"edu.upb.lp.genericgame:id/bottomSection\"]/android.widget.ScrollView[1]");
+        mainActivity.clickCellXpath("//android.widget.LinearLayout[@resource-id=\"edu.upb.lp.genericgame:id/bottomSection\"]/android.widget.ScrollView[2]");
+        boolean verificar = driver.findElements(By.xpath("//android.widget.TableLayout[@resource-id=\"edu.upb.lp.genericgame:id/maingrid\"]/android.widget.TableRow[10]/android.widget.TextView[4]")).isEmpty();
+        Assert.assertTrue("El personaje salio del borde inferior",verificar);
+    }
     @After
     public void tearDown() {
         if (driver != null) {
