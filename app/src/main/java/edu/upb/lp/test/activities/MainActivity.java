@@ -4,6 +4,8 @@ import io.appium.java_client.AppiumDriver;
 
 import org.openqa.selenium.By;
 
+import java.util.Objects;
+
 public class MainActivity {
 
     private final AppiumDriver driver;
@@ -31,5 +33,9 @@ public class MainActivity {
     }
     public void clickButtonBuyFood() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"BUY FOOD\"]")).click();
+    }
+
+    public boolean isHeaderTextVisible() {
+        return Objects.requireNonNull(driver.getPageSource()).contains("Bug World");
     }
 }

@@ -11,11 +11,11 @@ import java.net.URL;
 public class Session {
     private static Session session = null;
     private AppiumDriver device;
-    private Session(){
+    private Session() {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("appium:deviceName", "Galaxy A34 5G");
-        caps.setCapability("appium:platformVersion", "13");
         caps.setCapability("platformName", "Android");
+        caps.setCapability("appium:deviceName", "Practica Interna");
+        caps.setCapability("appium:platformVersion", "9");
         caps.setCapability("appium:automationName", "uiautomator2");
         caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
         caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
@@ -27,9 +27,10 @@ public class Session {
         }
     }
 
-    public static Session getInstance(){
-        if (session == null)
+    public static Session getInstance() {
+        if (session == null) {
             session = new Session();
+        }
         return session;
     }
 
@@ -37,6 +38,7 @@ public class Session {
         device.quit();
         session = null;
     }
+
     public static void resetInstance() {
         if (session != null) {
             session.device.quit();
