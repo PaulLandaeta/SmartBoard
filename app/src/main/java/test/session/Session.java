@@ -13,9 +13,10 @@ public class Session {
     private AppiumDriver device;
     private Session() {
         DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("appium:deviceName", "Pixel 9 Pro XL");
+        caps.setCapability("appium:platformVersion", "16");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:deviceName", "Practica Interna");
-        caps.setCapability("appium:platformVersion", "9");
         caps.setCapability("appium:automationName", "uiautomator2");
         caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
         caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
@@ -48,4 +49,5 @@ public class Session {
     public AppiumDriver getDevice(){
         return  device;
     }
+    public void setUp() {}
 }
