@@ -50,6 +50,8 @@ Thumbs.db
 
 # Exclude build outputs
 app/build/
+*.jar
+*.txt
 
 # Crashlytics
 crashlytics.properties
