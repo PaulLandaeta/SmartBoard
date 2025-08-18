@@ -30,4 +30,5 @@ public class DynamicTexts {
         Label time = new Label(By.xpath("//android.widget.TextView[contains(@text, 'Time:')]"));
         return time;
     }
+    //tests pagina bugs/botones: links
 }

@@ -111,6 +111,6 @@ public class DynamicTextTest {
             driver.quit();
         }
     }
-
+//tests pagina bugs/botones
 
 }
