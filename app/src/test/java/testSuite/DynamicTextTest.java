@@ -112,5 +112,6 @@ public class DynamicTextTest {
         }
     }
 //tests pagina bugs/botones
+    //links
 
 }
