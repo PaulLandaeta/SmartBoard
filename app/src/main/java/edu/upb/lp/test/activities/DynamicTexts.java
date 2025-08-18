@@ -31,5 +31,4 @@ public class DynamicTexts {
         return time;
     }
     //tests pagina bugs/botones: links
-    //links
 }
