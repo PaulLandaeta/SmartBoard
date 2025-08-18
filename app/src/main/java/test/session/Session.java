@@ -19,7 +19,6 @@ public class Session {
         caps.setCapability("appium:automationName", "uiautomator2");
         caps.setCapability("appium:appPackage", "edu.upb.lp.genericgame");
         caps.setCapability("appium:appActivity", "edu.upb.lp.core.activities.AndroidGameActivity");
-
         try {
             device = new AppiumDriver(new URL("http://127.0.0.1:4723/"), caps);
         } catch (MalformedURLException e) {
