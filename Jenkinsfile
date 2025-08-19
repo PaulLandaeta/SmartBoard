@@ -8,12 +8,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'develop', url: 'https://github.com/PaulLandaeta/SmartBoard.git'
-            }
-        }
-
         stage('Prepare local.properties') {
             steps {
                 sh 'echo "sdk.dir=${ANDROID_HOME}" > local.properties'
@@ -36,6 +30,8 @@ pipeline {
 
         stage('Clean Gradle Cache') {
             steps {
+                sh 'chmod +x ./gradlew'
+
                 sh './gradlew --stop'
                 sh 'rm -rf /var/jenkins_home/.gradle/caches/'
                 sh 'rm -rf /var/jenkins_home/.gradle/daemon/'
@@ -45,6 +41,8 @@ pipeline {
 
         stage('Build APK') {
             steps {
+                sh './gradlew assembleDebug'
+
                 sh 'chmod +x ./gradlew'
                 sh './gradlew clean'
                 sh './gradlew assembleDebug --stacktrace'
