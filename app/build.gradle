@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 34
+    compileSdk 35
     namespace 'edu.upb.lp.genericgame'
 
     defaultConfig {
@@ -30,18 +30,14 @@ android {
 
 dependencies {
     // Dependencias básicas
-    implementation 'androidx.appcompat:appcompat:1.7.0' // Soporte para Toolbar
+    implementation 'androidx.appcompat:appcompat:1.7.1' // Soporte para Toolbar
     implementation 'com.google.android.material:material:1.12.0' // Material Components
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
-//    implementation 'androidx.activity:activity:1.9.3'
-//    implementation 'org.testng:testng:7.8.0'
-
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 
     // Testing
     testImplementation 'junit:junit:4.13.2'
-//    testImplementation 'androidx.test:core:1.6.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
 
 
     // Testing With Appium
