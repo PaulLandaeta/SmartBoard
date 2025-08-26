@@ -14,7 +14,7 @@ Entender la arquitectura de pruebas utilizada.
 
 <img width="417" height="166" alt="Captura de pantalla 2025-08-26 185907" src="https://github.com/user-attachments/assets/db27bebe-8f5c-4d8f-a525-f9b9d27167f1" />
 
-1.2 Tecnologías Utilizadas![Uploading Captura de pantalla 2025-08-26 185907.png…]()
+1.2 Tecnologías Utilizadas
 
 Android Studio: IDE principal del proyecto, utilizado para la gestión del código y de los emuladores Android.
 
