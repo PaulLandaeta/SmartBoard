@@ -11,7 +11,11 @@ Levantar el entorno de pruebas con Appium y un emulador Android.
 Entender la arquitectura de pruebas utilizada.
 
 
-1.2 Tecnologías Utilizadas
+
+<img width="417" height="166" alt="Captura de pantalla 2025-08-26 185907" src="https://github.com/user-attachments/assets/db27bebe-8f5c-4d8f-a525-f9b9d27167f1" />
+
+1.2 Tecnologías Utilizadas![Uploading Captura de pantalla 2025-08-26 185907.png…]()
+
 Android Studio: IDE principal del proyecto, utilizado para la gestión del código y de los emuladores Android.
 
 
@@ -30,6 +34,9 @@ Appium Inspector: Herramienta para inspección de elementos y configuración de 
 Page Object Model (POM): Patrón de diseño adoptado en la estructura de las pruebas.
 
 
+<img width="1036" height="730" alt="Captura de pantalla 2025-08-26 191656" src="https://github.com/user-attachments/assets/99670893-7361-40a0-93cc-3e9e7857c10a" />
+
+
 1.3 Patrón de Diseño (Page Object Model - POM)
 El patrón Page Object Model (POM) se implementa para separar la lógica de prueba de la lógica de la interfaz de usuario.
 Cada pantalla de la aplicación cuenta con una clase que representa sus elementos y acciones.
@@ -39,6 +46,8 @@ Los casos de prueba llaman a estas clases para ejecutar escenarios de manera reu
 
 
 Esto mejora la mantenibilidad y facilita la adaptación a cambios en la UI.
+
+<img width="569" height="746" alt="Captura de pantalla 2025-08-26 185152" src="https://github.com/user-attachments/assets/6ecc20a3-0058-4d0e-bab9-213cfd6b1d02" />
 
 
 
@@ -63,6 +72,9 @@ Node.js 16 o superior (para instalar Appium).
 
 
 Git (para clonar el repositorio).
+
+
+<img width="1036" height="730" alt="Captura de pantalla 2025-08-26 191656" src="https://github.com/user-attachments/assets/e2e5b0a2-d1e5-4285-8ba2-c5a50dcf292f" />
 
 
 2.2 Configuración del Entorno
@@ -131,6 +143,9 @@ Validar que el dispositivo está disponible:
 
  adb devices
 
+<img width="414" height="112" alt="Captura de pantalla 2025-08-26 191847" src="https://github.com/user-attachments/assets/9cea45fb-3317-4df9-abdc-bca1873b0f70" />
+
+<img width="630" height="213" alt="Captura de pantalla 2025-08-26 191928" src="https://github.com/user-attachments/assets/8634adea-707e-4b55-a102-2e0802bd1755" />
 
 2.3 Clonación del Proyecto
 Hacer fork del repositorio base: PaulLandaeta/SmartBoard
